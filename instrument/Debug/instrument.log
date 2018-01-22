@@ -1,5 +1,6 @@
 ﻿  test.cpp
   CConnect.cpp
+  CAWG7082C.cpp
   正在生成代码...
     正在创建库 D:\projects\instrument\Debug\instrument.lib 和对象 D:\projects\instrument\Debug\instrument.exp
   instrument.vcxproj -> D:\projects\instrument\Debug\instrument.dll

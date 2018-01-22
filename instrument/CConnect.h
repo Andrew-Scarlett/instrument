@@ -4,4 +4,5 @@
 
 #pragma comment(lib,"../Debug/visa32.lib")
 
-__declspec(dllexport) bool CConnect(ViConstRsrc &addr);
+__declspec(dllexport) int CConnect(ViConstRsrc &addr);//test
+__declspec(dllexport) bool CConnect(ViConstRsrc &addr,ViSession &defaultRM, ViSession &vi);

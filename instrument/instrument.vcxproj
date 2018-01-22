@@ -139,10 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CAWG7082C.cpp" />
     <ClCompile Include="CConnect.cpp" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CAWG7082C.h" />
     <ClInclude Include="CConnect.h" />
     <ClInclude Include="test.h" />
     <ClInclude Include="visa.h" />

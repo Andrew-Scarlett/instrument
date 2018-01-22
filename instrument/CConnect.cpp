@@ -1,6 +1,7 @@
 #include "CConnect.h"
 
-bool CConnect(ViConstRsrc &addr) {
+//test function
+int CConnect(ViConstRsrc &addr) {
 	ViSession defaultRM, vi;
 	char buf[256] = { 0 };
 	/* Open session to LAN device at address  */
@@ -16,4 +17,20 @@ bool CConnect(ViConstRsrc &addr) {
 	viClose(vi);
 	viClose(defaultRM);
 	return 0;
+}
+
+bool CConnect(ViConstRsrc &addr, ViSession &defaultRM, ViSession &vi) {
+	if (viOpenDefaultRM(&defaultRM) >= VI_SUCCESS) {
+		if (viOpen(defaultRM, addr, VI_NULL, VI_NULL, &vi) >= VI_SUCCESS) {
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	else {
+		return false;
+	}
+	return false;
 }
